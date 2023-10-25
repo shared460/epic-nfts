@@ -25,7 +25,7 @@ export default function NftCard({nft}){
             <div className='info'>
                 <h2 style={{textDecoration:'underline'}}>{nft.title}</h2>
                 <p> token: {nft.id.tokenId.substr(nft.id.tokenId.length-4)}</p>
-                <p value={nft.contract.address} ref={textRef}>address: {`${nft.contract.address.substr(0,4)}...${nft.contract.address.substr(nft.contract.address.length-4)}`}</p>
+                <p value={nft.contract.address}>address: {`${nft.contract.address.substr(0,4)}...${nft.contract.address.substr(nft.contract.address.length-4)}`}</p>
             </div>
             <div className='main-info'>
                 <p>{nft.description.substr(0,100)}</p>
